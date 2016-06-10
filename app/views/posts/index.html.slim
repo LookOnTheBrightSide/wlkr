@@ -1,0 +1,7 @@
+h1 Welcome to my awesome site!
+
+button = link_to "New Item", new_post_path
+- @posts.each do |post|
+  p = post.title
+  p = time_ago_in_words(post.created_at) + " ago"
+  button = link_to "See More", post

@@ -1,0 +1,8 @@
+h1 = @post.title
+span = link_to "Edit", edit_post_path(@post)
+span = link_to "Delete", post_path(@post), method: :delete, data:{confirm: "Confirm delete"}
+p  = time_ago_in_words(@post.created_at)
+
+p = @post.body
+
+button = link_to "All Posts", posts_path
