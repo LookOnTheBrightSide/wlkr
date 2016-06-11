@@ -1,16 +1,62 @@
+// #224444
+$color-main: #4433cc
+$color-blue: #2288ff
+// #9988ee
+$color-secondary: #aa9977
+//
+$color-text: #333333
+// #6655aa
+// #6699ee
+// #aaaadd
+// #999988
+// https://dandapani.org/wp-content/uploads/2015/11/Jacaranda.jpg
+// http://www.degraeve.com/color-palette/index.php?q=https://dandapani.org/wp-content/uploads/2015/11/Jacaranda.jpg,2D3939625AA46695E8ACA7D99D9885,263F3F4635C92583FF988FF2A99F79
+
 .button
-  border: 1px solid rebeccapurple
   padding: 0.4rem 0.6rem
-  color: rebeccapurple
   font-size: 0.8rem
-  border-radius: 0.4rem
+  border-radius: 0.6rem
   text-transform: uppercase
-  background-color: white
   font-weight: 400
   outline: none
+  &--main
+    border: 1px solid $color-main
+    color: white
+    background-color: $color-main
+    &:hover
+      box-shadow: 0 1px 5px $color-main
+  &--secondary
+    border: 1px solid $color-main
+    color: $color-main
+    background-color: white
+    &:hover
+      box-shadow: 0 1px 5px $color-main
+
   &:focus
     outline: none
   &:hover
     outline: none
-    box-shadow: 0 1px 5px rebeccapurple
     cursor: pointer
+
+
+.styleguide-text-color
+  color: white
+  margin: auto auto
+  padding: 0.4rem
+.color
+  width: 400px
+  height: 50px
+  margin: 0.4rem
+
+.color-main
+  background-color: $color-main
+.color-secondary
+  background-color: $color-blue
+
+
+h1,h2,h3,h4,h5,h6,p
+  font-family: "Roboto"
+  color: $color-text
+
+p
+  font-size: 1rem
