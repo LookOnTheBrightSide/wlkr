@@ -1,2 +1,6 @@
-source: 'application.css.sass' 
+source: 'application.css.sass'
 title: 'My Living Style Guide'
+styleguide-scss: |
+  .livingstyleguide--footer {
+    display: none;
+  }
